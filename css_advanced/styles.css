@@ -1,42 +1,45 @@
 body {
-    padding: 0;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: url("https://img.freepik.com/free-photo/young-adults-enjoy-carefree-nightlife-singing-laughing-generated-by-ai_188544-54046.jpg");
+    background-size: contain;
     font-family: "Source Sans Pro";
     font-style: normal;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    flex: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 2% 5% 2% 5%;
-    filter: grayscale(100%);
-    position: absolute;
-    left: -0.025%;
-    right: -0.025%;
-    top: 0%;
-    justify-content: space-between;
-    bottom: -26.48%;
-    height: 100vh;
-    
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-size: 12px;
+    color:white;
+    text-align: center;   
 }
 
-.link3 {
-    font-weight: 700;
-    font-size: 12px;
-
+.quote{
+    background-color: #c271ff;
 }
 
+.links3 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #ffffff;
+}
 
-.link3>a {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
+.links3 img{
+    float: left;
+}
+.links3 a {
+    float: right;
+    display:block;
     color: #FFFFFF;
-    padding-right: 53px;
+    padding: 16px;
     text-transform: uppercase;
+    text-align: center;
     text-decoration: none;
 }
 
@@ -55,12 +58,13 @@ header {
 }
 
 .Banner {
-    display: flex;
-    flex-direction: column;
+    align-items: center;
     padding-top: 5rem;
+    display: inline-block;
+    justify-content: center;
 }
 
-.Banner>h1 {
+.Banner h1 {
     height: 151px;
     font-weight: 700;
     font-size: 120px;
@@ -70,7 +74,7 @@ header {
     z-index: 20;
 }
 
-.Banner>p {
+.Banner p {
     height: 20px;
     position: relative;
     margin-top: -5%;
@@ -85,7 +89,7 @@ header {
     margin-right: 38%;
 }
 
-.Banner>button {
+.Banner button {
     background: #c271ff;
     border-radius: 25px;
     border: none;
@@ -106,18 +110,17 @@ header {
 .BannerImage {
     padding: 1%;
     display: flex;
-    flex-direction: column;
     z-index: 20;
 }
 
-.Banner>h2 {
+.Banner h2 {
     align-self: center;
     padding: 2rem;
     font-weight: 300;
     line-height: 40px;
 }
 
-.Banner .dcolor {
+.dcolor {
     font-weight: 700;
 }
 
@@ -136,12 +139,12 @@ header {
     align-items: center;
 }
 
-.BannerImage>img {
+.BannerImage img {
     border-radius: 50%;
     max-width: 80%;
 }
 
-.BannerImage > h3 {
+.BannerImage h3 {
     font-style: normal;
     font-weight: 900;
     font-size: 18px;
@@ -150,7 +153,7 @@ header {
     color: #FFFFFF;
 }
 
-.BannerImage>p {
+.BannerImage p {
     height: 48px;
     font-family: 'Source Sans Pro';
     font-style: italic;
